@@ -3,6 +3,8 @@ def search(i):
     for j in range(len(l)):
         if l[j]==i:
             return j,i
+        else:
+            return("emp id not found")
     return search(i)
 
 i = int(input("enter the id to be searched:"))      
