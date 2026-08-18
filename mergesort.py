@@ -18,7 +18,11 @@ def merge(left, right):
     merged.extend(left[i:])
     merged.extend(right[j:])
     return merged
-arr = [38, 27, 43, 3, 9, 82, 10]
+n=int(input("enter the number of elements"))
+arr = []
+for i in range(n):
+    k=int(input("enter the elements"))
+    arr.append(k)
 sorted_arr = merge_sort(arr)
 print("Original array:", arr)
 print("Sorted array:", sorted_arr)
