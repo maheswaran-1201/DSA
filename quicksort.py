@@ -13,8 +13,11 @@ def quicksort(a, low, high):
         a[pivot], a[j] = a[j], a[pivot]
         quicksort(a, low, j - 1)
         quicksort(a, j + 1, high)
-a = list(map(int, input("Enter numbers to sort: ").split()))
-n = len(a)
+n = int(input("enter the number of elements"))
+a=[]
+for i in range(n):
+    k=int(input("enter the element"))
+    a.append(k)
 quicksort(a, 0, n - 1)
 print("Sorted array:")
 print(a)
