@@ -8,19 +8,19 @@ class CircularLinkedList:
         self.head=None
 
     def create(self):
-        n=int(input("enter the number of nodes:"))
+        n = int(input("enter the number of nodes:"))
         for i in range(n):
             data = int(input(f"Enter data for node{i+1}:"))
-            new_node=Node(data)
+            new_node = Node(data)
             if self.head is None:
-                self.head=new_node
-                new_node.next=self.head
+                self.head = new_node
+                new_node.next = self.head
             else:
                 temp = self.head
                 while temp.next != self.head:
-                    temp=temp.next
-            temp.next=new_node
-            new_node.next=self.head
+                    temp = temp.next
+                temp.next = new_node
+                new_node.next = self.head
         print("circular Linked list is created succesfully")
 
     def insert_beginning(self):
